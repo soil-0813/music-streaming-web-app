@@ -1,0 +1,156 @@
+.library-layout {
+  display: flex;
+  height: 100vh;
+  background: #f7f3ff;
+}
+
+/* ───── SIDEBAR ───── */
+.sidebar {
+  padding: 30px 20px;
+  background: linear-gradient(180deg, #ede9fe, #f5f3ff);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ece8ff;
+  margin-bottom: 30px;
+}
+
+.nav-links button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #5b21b6;
+}
+
+.nav-links button:hover {
+  background: #ddd6fe;
+}
+
+.playlist-section {
+  margin-top: 40px;
+}
+
+.playlist-section h4 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #6b21a8;
+}
+
+.create-playlist {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--lavender);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.playlist-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.playlist-section li {
+  padding: 6px 0;
+  color: #5b21b6;
+}
+
+/* MAIN */
+.library-main {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.library-main h1 {
+  font-size: 28px;
+  color: #4c1d95;
+}
+
+.subtitle {
+  color: #8b5cf6;
+  margin-bottom: 24px;
+}
+
+/* CARDS */
+.library-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.music-card {
+  background: white;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.1);
+}
+
+.music-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.music-card h4 {
+  color: #6d28d9;
+  font-size: 14px;
+}
+
+.music-card p {
+  color: #a78bfa;
+  font-size: 12px;
+}
+
+/* SONG LIST */
+.song-list h2 {
+  margin-bottom: 16px;
+  color: #4c1d95;
+}
+
+.song-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.song-row img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.song-row h4 {
+  font-size: 14px;
+  color: #6d28d9;
+}
+
+.song-row p {
+  font-size: 12px;
+  color: #a78bfa;
+}
+
+.song-row span {
+  margin-left: auto;
+  color: #8b5cf6;
+}

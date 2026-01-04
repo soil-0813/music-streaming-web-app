@@ -1,0 +1,160 @@
+/* ───── SIDEBAR ───── */
+.sidebar {
+  padding: 30px 20px;
+  background: linear-gradient(180deg, #ede9fe, #f5f3ff);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ece8ff;
+  margin-bottom: 30px;
+}
+
+.nav-links button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #5b21b6;
+}
+
+.nav-links button:hover {
+  background: #ddd6fe;
+}
+
+.playlist-section {
+  margin-top: 40px;
+}
+
+.playlist-section h4 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #6b21a8;
+}
+
+.create-playlist {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--lavender);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.playlist-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.playlist-section li {
+  padding: 6px 0;
+  color: #5b21b6;
+}
+
+/*MAIN*/
+.library-main {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.search-page {
+  display: flex;
+  gap: 32px;
+  background: linear-gradient(180deg, #faf7ff, #f2eaff);
+  min-height: 100vh;
+  /*padding: 32px;*/
+}
+
+/* 🔍 Search Bar */
+.search-bar {
+  margin-bottom: 28px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: #f4edff;
+  color: #4c1d95;
+  font-weight: 500;
+}
+
+.search-bar input::placeholder {
+  color: #9f7aea;
+}
+
+/* 🟣 Title */
+.search-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 🟪 Grid */
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 22px;
+}
+
+/* 🟣 Card */
+.search-card {
+  background: linear-gradient(135deg, #f6f3ff, #ede9fe);
+  border-radius: 20px;
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.12);
+  position: relative;
+}
+
+.search-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.25);
+}
+
+/* 🎵 Cover */
+.search-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #c084fc, #a78bfa);
+}
+
+/* 📝 Info */
+.search-card-info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #3b0764;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.search-card-info p {
+  font-size: 13px;
+  color: #6d28d9;
+  font-weight: 500;
+}
+
+/* ❌ Empty */
+.empty-search {
+  margin-top: 30px;
+  color: #777;
+  text-align: center;
+}

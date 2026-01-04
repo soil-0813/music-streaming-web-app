@@ -1,0 +1,177 @@
+/* ───── PAGE LAYOUT ───── */
+.page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: #f6f2ff;
+}
+
+/* ───── SIDEBAR ───── */
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  flex-shrink: 0;
+  padding: 30px 20px;
+  background: linear-gradient(180deg, #ede9fe, #f5f3ff);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background: #7c3aed;
+  padding: 16px 18px;
+
+  border-radius: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 30px;
+}
+
+/* ───── NAV ───── */
+.nav-links button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #5b21b6;
+}
+
+.nav-links button:hover {
+  background: #ddd6fe;
+}
+
+/* ───── PLAYLIST ───── */
+.playlist-section {
+  margin-top: 40px;
+}
+
+.playlist-section h4 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #6b21a8;
+}
+
+.create-playlist {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  background: #a855f7;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.playlist-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.playlist-section li {
+  padding: 6px 0;
+  color: #5b21a8;
+}
+
+/* ───── MAIN CONTENT ───── */
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* SECTION TITLE */
+.page h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6b21a8;
+  margin-bottom: 28px;
+}
+
+/* ───── EPISODE CARD ───── */
+.episode {
+  background: #fbfaff;
+  border-radius: 22px;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.12);
+}
+
+.episode > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.episode::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-image: linear-gradient(135deg, #e9d5ff, #ddd6fe);
+  flex-shrink: 0;
+}
+
+.episode h4::before {
+  content: "CATEGORY";
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #c084fc;
+  margin-bottom: 6px;
+}
+
+.episode h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #6b21a8;
+  margin: 0;
+}
+
+.episode p {
+  font-size: 14px;
+  color: #a855f7;
+  margin: 4px 0 0 0;
+}
+
+/* PLAY BUTTON */
+.episode button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+
+  background: #ede9fe;
+  color: #7e22ce;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.episode button:hover {
+  background: linear-gradient(135deg, #a855f7, #7e22ce);
+  color: white;
+  transform: scale(1.05);
+}
